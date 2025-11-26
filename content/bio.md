@@ -1,5 +1,3 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am a Master's student in Econometrics and Mathematical Economics at the London School of Economics and Political Science (LSE). My research interests lie in mechanism design, market design, and applied microeconomics.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+I completed my undergraduate studies in Economics at the University of Macau as a member of the Honors College, where I wrote my honors thesis on China's Gaokao admission mechanism reform.
