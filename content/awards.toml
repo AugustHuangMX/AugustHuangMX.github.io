@@ -3,25 +3,19 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
+title = "Dean's Honor List"
+subtitle = "University of Macau"
+date = "2021-2024"
+content = "Recognized for outstanding academic performance throughout undergraduate studies for three consecutive academic years."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "UMDF Scholarship Award"
+subtitle = "University of Macau"
 date = "2024"
-content = "Description of the award."
+content = "Awarded 5000 MOP scholarship in recognition of academic excellence and contribution to the university community."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "AAAUM Scholarship"
+subtitle = "University of Macau"
 date = "2023"
-content = "Description of the award."
-
-[[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+content = "Received 5000 MOP scholarship from the Alumni Association for academic achievement and leadership potential."

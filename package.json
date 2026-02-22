@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && touch out/.nojekyll && npx gh-pages -d out -b gh-pages --dotfiles"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
@@ -31,6 +32,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
+    "gh-pages": "^6.3.0",
     "svg2ico": "^1.0.35",
     "tailwindcss": "^4",
     "typescript": "^5"
