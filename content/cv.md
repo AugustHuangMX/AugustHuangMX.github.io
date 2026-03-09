@@ -14,8 +14,11 @@
 ## Research Experience
 
 **Beyond Human Capital: Language as Institutional Capital and Its Impacts on Local Governance in Rural China**
+
 Remote Research Assistant, Led by Professor Zihan Hu
+
 *January 2026 - Present*
+
 - Analyzed China's National Fixed Point Survey (NFPS, 2003–2008) in Stata to examine how Mandarin proficiency affects rural residents' access to government subsidies.
 - Implemented a Differencing Regression Kink Design (RKD) exploiting China's "Promote Mandarin" campaign as a quasi-natural experiment, with dialect-Mandarin affinity as the key differencing variable.
 - Conducted balancing and density tests across three sample specifications; replicated baseline regressions with village/county fixed effects and two-way clustering by year and village.
@@ -43,7 +46,7 @@ Wage Discrimination in the English Premier League, Peking University Summer Scho
 
 ## Skills
 
-- **Programming:** Python, R, Stata
+- **Programming:** Python, Stata
 - **Tools:** LaTeX, Markdown, Typst
 - **Data Analysis:** Econometric modeling, data visualization, web scraping
 - **Languages:** Chinese (Native), English (Fluent, IELTS 7.0)
