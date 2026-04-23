@@ -23,7 +23,7 @@ linkedin = "https://www.linkedin.com/in/augusthuangmx/"
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false
@@ -33,7 +33,7 @@ enabled = true
 locales = ["zh", "en"]
 default_locale = "en"
 # "auto" means the locale will be determined by the browser's language setting, "fixed" means the locale will be fixed to the default locale (but can be switched still, if you want to disable, set "enable=false")
-mode = "auto"
+mode = "fixed"
 fixed_locale = "en"
 # If true, PRISM will remember user's language preference in browser's localStorage
 persist = true
@@ -51,10 +51,10 @@ target = "about"
 href = "/"
 
 
-#[[navigation]]
-#title = "Digital Garden"
-#url = "https://hzd-digital-garden.vercel.app/"
-#external = true
+[[navigation]]
+title = "Digital Garden"
+url = "https://hzd-digital-garden.vercel.app/"
+external = true
 
 
 [[navigation]]

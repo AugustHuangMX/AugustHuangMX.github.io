@@ -1,23 +1,23 @@
 type = "about"
-title = "关于我"
+title = "关于"
 
 [profile]
 research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+  "市场设计",
+  "应用微观经济学",
+  "人工智能与经济学"
 ]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "关于我"
+title = "关于"
 
 [[sections]]
 id = "featured_publications"
 type = "publications"
-title = "精选论文"
+title = "精选作品"
 filter = "selected"
 limit = 5
 
