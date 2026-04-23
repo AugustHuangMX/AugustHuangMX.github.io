@@ -11,7 +11,7 @@ avatar = "/bio.jpg"
 [social]
 email = "augusthuangmx@outlook.com"
 location = "London, UK"
-location_url = "https://maps.google.com"
+location_url = "https://www.google.com/maps/place/%E4%BC%A6%E6%95%A6%E6%94%BF%E7%BB%8F%E5%AD%A6%E9%99%A2/@51.5144421,-0.1190262,17z/data=!3m2!4b1!5s0x487bfa037cb4bd8f:0x5cfd253efa0504e!4m6!3m5!1s0x48761a7b6bb3055b:0xbdb31c970f2cb8ef!8m2!3d51.5144388!4d-0.1164513!16zL20vMGhzYjM?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D"
 location_details = [
   "London School of Economics and Political Science",
   "Houghton St, London WC2A 2AE, United Kingdom"
