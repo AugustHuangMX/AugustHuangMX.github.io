@@ -1,12 +1,18 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  /* config options here */
+  turbopack: {
+    rules: {
+      '*.bib': {
+        loaders: ['raw-loader'],
+        as: '*.js',
+      },
+    },
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.bib$/,
@@ -15,5 +21,4 @@ const nextConfig: NextConfig = {
     return config;
   },
 };
-
 export default nextConfig;
