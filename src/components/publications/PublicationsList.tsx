@@ -14,6 +14,7 @@ import {
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
+import { useMessages } from '@/lib/i18n/useMessages';
 
 interface PublicationsListProps {
     config: PublicationPageConfig;
@@ -22,6 +23,7 @@ interface PublicationsListProps {
 }
 
 export default function PublicationsList({ config, publications, embedded = false }: PublicationsListProps) {
+    const messages = useMessages();
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
     const [selectedType, setSelectedType] = useState<string | 'all'>('all');
@@ -79,7 +81,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                         <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-neutral-400" />
                         <input
                             type="text"
-                            placeholder="Search publications..."
+                            placeholder={messages.publications.searchPlaceholder}
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full pl-10 pr-4 py-2 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200"
@@ -95,7 +97,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                         )}
                     >
                         <FunnelIcon className="h-5 w-5 mr-2" />
-                        Filters
+                        {messages.publications.filters}
                     </button>
                 </div>
 
@@ -111,7 +113,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 {/* Year Filter */}
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300 flex items-center">
-                                        <CalendarIcon className="h-4 w-4 mr-1" /> Year
+                                        <CalendarIcon className="h-4 w-4 mr-1" /> {messages.publications.year}
                                     </label>
                                     <div className="flex flex-wrap gap-2">
                                         <button
@@ -123,7 +125,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
                                         >
-                                            All
+                                            {messages.common.all}
                                         </button>
                                         {years.map(year => (
                                             <button
@@ -145,7 +147,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 {/* Type Filter */}
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300 flex items-center">
-                                        <BookOpenIcon className="h-4 w-4 mr-1" /> Type
+                                        <BookOpenIcon className="h-4 w-4 mr-1" /> {messages.publications.type}
                                     </label>
                                     <div className="flex flex-wrap gap-2">
                                         <button
@@ -157,7 +159,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
                                         >
-                                            All
+                                            {messages.common.all}
                                         </button>
                                         {types.map(type => (
                                             <button
@@ -185,7 +187,7 @@ export default function PublicationsList({ config, publications, embedded = fals
             <div className="space-y-6">
                 {filteredPublications.length === 0 ? (
                     <div className="text-center py-12 text-neutral-500">
-                        No publications found matching your criteria.
+                        {messages.publications.noResults}
                     </div>
                 ) : (
                     filteredPublications.map((pub, index) => (
@@ -217,7 +219,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
-                                                <span className={author.isHighlighted ? 'font-semibold text-accent' : ''}>
+                                                <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
                                                     {author.name}
                                                 </span>
                                                 {author.isCorresponding && (
@@ -255,7 +257,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 rel="noopener noreferrer"
                                                 className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
                                             >
-                                                Code
+                                                {messages.publications.code}
                                             </a>
                                         )}
                                         {pub.abstract && (
@@ -269,7 +271,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 )}
                                             >
                                                 <DocumentTextIcon className="h-3 w-3 mr-1.5" />
-                                                Abstract
+                                                {messages.publications.abstract}
                                             </button>
                                         )}
                                         {pub.bibtex && (
@@ -283,7 +285,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 )}
                                             >
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
-                                                BibTeX
+                                                {messages.publications.bibtex}
                                             </button>
                                         )}
                                     </div>
@@ -322,7 +324,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                             // Optional: Show copied feedback
                                                         }}
                                                         className="absolute top-2 right-2 p-1.5 rounded-md bg-white dark:bg-neutral-700 text-neutral-500 hover:text-accent shadow-sm border border-neutral-200 dark:border-neutral-600 transition-colors"
-                                                        title="Copy to clipboard"
+                                                        title={messages.common.copyToClipboard}
                                                     >
                                                         <ClipboardDocumentIcon className="h-4 w-4" />
                                                     </button>

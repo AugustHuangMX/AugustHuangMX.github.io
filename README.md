@@ -6,6 +6,8 @@
 
 **English** · [中文](README_cn.md) · [Demo](https://prism-demo.pages.dev)  · [Changelog](CHANGELOG.md)
 
+**If you like this project, please give it a star ⭐️**
+
 PRISM stands for **P**ortfolio & **R**esearch **I**nterface **S**ite **M**aker. It is a modern, configurable, and high-performance personal website template built with Next.js, Tailwind CSS, and TypeScript. It is designed for researchers, developers, and academics to showcase their work, publications, and portfolio with ease.
 
 ![PRISM Preview](screenshot.png)
@@ -23,7 +25,9 @@ PRISM stands for **P**ortfolio & **R**esearch **I**nterface **S**ite **M**aker. 
 
 ### Prerequisites
 
-*   Node.js 15 or later
+*   Node.js 22 or later
+    *   **Important**: Please download and install Node.js manually from [https://nodejs.org/en/download](https://nodejs.org/en/download).
+    *   Better not to use the pre-installed version on your system, as it may be outdated or incompatible.
 *   npm, pnpm, or yarn
 
 ### Installation
@@ -31,7 +35,7 @@ PRISM stands for **P**ortfolio & **R**esearch **I**nterface **S**ite **M**aker. 
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/PRISM.git
+    git clone https://github.com/xyjoey/PRISM.git
     cd PRISM
     ```
 
@@ -82,8 +86,20 @@ To add a new page (e.g., "Projects"), create a TOML file in `content/` (e.g., `c
 
 Supported page types:
 *   `text`: Renders Markdown content (Great for CVs, Bio).
-*   `card`: Renders a list of cards (Great for Projects, Awards).
+*   `card`: Renders a list of cards (Great for Projects, Awards). Content of each card item supports Markdown.
 *   `publication`: Renders the full publications list with filters.
+
+### 5. I18N Support (`content_<locale>/`)
+PRISM now supports i18n, i.e., multi-language.
+
+*   Default language lives in `content/`.
+*   Additional languages live in `content_<locale>/` (for example: `content_zh/`, `content_en/`).
+*   Keep the same filenames across directories. Example:
+    *   `content/cv.md` (default)
+    *   `content_zh/cv.md`
+*   If a localized file is missing, PRISM automatically falls back to the default `content/` version.
+
+Configure language behavior in `content/config.toml`:
 
 ## 📦 Deployment
 
