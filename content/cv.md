@@ -1,7 +1,7 @@
 ## Education
 
 **London School of Economics and Political Science (LSE)**, MSc in Econometrics and Mathematical Economics, *2025 - 2026*
-- Research interests: Mechanism design, market design, applied microeconomics
+- Research interests: Market design, Labour Economics, AI and Economics
 - Coursework: Advanced Microeconomics, Advanced Macroeconomics, Econometrics Analysis, Labour Economics
 
 **University of Macau**, BSc in Economics (Honours College), *2021 - 2025*
