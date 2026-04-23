@@ -53,8 +53,9 @@ href = "/"
 
 [[navigation]]
 title = "Digital Garden"
-url = "https://hzd-digital-garden.vercel.app/"
-external = true
+type = "link"
+target = "_blank"
+href = "https://hzd-digital-garden.vercel.app/"
 
 
 [[navigation]]
