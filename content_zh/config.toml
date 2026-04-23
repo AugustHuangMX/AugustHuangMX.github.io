@@ -1,0 +1,88 @@
+[site]
+title = "黄敏行"
+description = "伦敦政治经济学院计量经济学与数理经济学硕士研究生"
+
+[author]
+name = "黄敏行"
+title = "硕士研究生"
+institution = "伦敦政治经济学院"
+avatar = "/bio.jpg"
+
+[social]
+email = "augusthuangmx@outlook.com"
+location = "英国伦敦"
+location_url = "https://maps.google.com"
+location_details = [
+  "伦敦政治经济学院",
+  "Houghton St, London WC2A 2AE, United Kingdom"
+]
+google_scholar = ""
+orcid = ""
+github = "https://github.com/AugustHuangMX"
+linkedin = "https://www.linkedin.com/in/augusthuangmx/"
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["zh", "en"]
+default_locale = "en"
+# "auto" means the locale will be determined by the browser's language setting, "fixed" means the locale will be fixed to the default locale (but can be switched still, if you want to disable, set "enable=false")
+mode = "fixed"
+fixed_locale = "en"
+# If true, PRISM will remember user's language preference in browser's localStorage
+persist = true
+# Show a language switcher on the top right corner
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+
+[[navigation]]
+title = "数字花园"
+url = "https://hzd-digital-garden.vercel.app/"
+external = true
+
+
+[[navigation]]
+title = "发表作品"
+type = "page"
+target = "publications"
+href = "/publications"
+
+#[[navigation]]
+#title = "教学"
+#type = "page"
+#target = "teaching"
+#href = "/teaching"
+
+[[navigation]]
+title = "获奖情况"
+type = "page"
+target = "awards"
+href = "/awards"
+
+#[[navigation]]
+#title = "服务"
+#type = "page"
+#target = "services"
+#href = "/services"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

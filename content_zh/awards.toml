@@ -1,0 +1,21 @@
+type = "card"
+title = "获奖情况"
+description = "我获得的荣誉与奖项。"
+
+[[items]]
+title = "院长荣誉名单"
+subtitle = "澳门大学"
+date = "2021-2024"
+content = "因在本科学习期间连续三个学年表现优异而获得表彰。"
+
+[[items]]
+title = "UMDF 奖学金"
+subtitle = "澳门大学"
+date = "2024"
+content = "因学术卓越和对大学社区的贡献而获得 5000 澳门币奖学金。"
+
+[[items]]
+title = "AAAUM 奖学金"
+subtitle = "澳门大学"
+date = "2023"
+content = "因学术成就和领导潜力从校友协会获得 5000 澳门币奖学金。"
