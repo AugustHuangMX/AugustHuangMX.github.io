@@ -1,4 +1,5 @@
 type = "publication"
-title = "Publications"
+title = "Research"
 description = "A collection of my research work."
 source = "publications.bib"
+    

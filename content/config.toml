@@ -59,10 +59,10 @@ href = "https://hzd-digital-garden.vercel.app/"
 
 
 [[navigation]]
-title = "Publications"
+title = "Research"
 type = "page"
-target = "publications"
-href = "/publications"
+target = "research"
+href = "/research"
 
 #[[navigation]]
 #title = "Teaching"
