@@ -19,9 +19,7 @@ Remote Research Assistant, Led by Professor Zihan Hu
 
 *January 2026 - Present*
 
-- Analyzed China's National Fixed Point Survey (NFPS, 2003–2008) in Stata to examine how Mandarin proficiency affects rural residents' access to government subsidies.
-- Implemented a Differencing Regression Kink Design (RKD) exploiting China's "Promote Mandarin" campaign as a quasi-natural experiment, with dialect-Mandarin affinity as the key differencing variable.
-- Conducted balancing and density tests across three sample specifications; replicated baseline regressions with village/county fixed effects and two-way clustering by year and village.
+- In Progress.
 
 **Micro Theory Reading Group**  
 Workshop led by Professor Inácio Bó, University of Macau  
