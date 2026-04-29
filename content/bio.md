@@ -6,5 +6,6 @@ I am currently a remote research assistant for Professor [Elaine Liu](https://ay
 
 I completed my undergraduate studies in Economics at the University of Macau as a member of the Honors College, where I wrote my honors thesis on China's Gaokao admission mechanism reform.
 
-📚 Check out my Digital Garden at https://hzd-digital-garden.vercel.app/ for my learning notes and research thoughts.
+📚 Check out my [Digital Garden](https://hzd-digital-garden.vercel.app/) for my learning notes and research thoughts.
+
 
