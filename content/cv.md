@@ -1,8 +1,8 @@
 ## Education
 
 **London School of Economics and Political Science (LSE)**, MSc in Econometrics and Mathematical Economics, *2025 - 2026*
-- Research interests: Market design, Labour Economics, AI and Economics
 - Coursework: Advanced Microeconomics, Advanced Macroeconomics, Econometrics Analysis, Labour Economics
+- Final Grade: Merit
 
 **University of Macau**, BSc in Economics (Honours College), *2021 - 2025*
 - Honours Thesis: "Mechanism Design Insights into Improved Talent Recognition in Chinese College Admissions" (Advised by Prof. Inácio Bó)
@@ -12,6 +12,12 @@
 **Peking University & University of Chicago**, Summer School, International Policy Action Lab, *2023*
 
 ## Research Experience
+
+**Pre-Doctoral Research Fellow**
+
+LSE, Supervised by David Dorn
+
+*September 2026 - August 2028*
 
 **Beyond Human Capital: Language as Institutional Capital and Its Impacts on Local Governance in Rural China**
 
