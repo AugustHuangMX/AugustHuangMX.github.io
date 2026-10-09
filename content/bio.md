@@ -2,5 +2,3 @@ I am currently a Pre-doctoral Research Fellow in University of Zurich, working w
 
 I completed my undergraduate studies in Economics at the University of Macau as a member of the Honors College, and I completed my master degree in LSE.
 
-
-

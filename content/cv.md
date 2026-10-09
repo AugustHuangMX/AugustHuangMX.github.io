@@ -15,7 +15,7 @@
 
 **Pre-Doctoral Research Fellow**
 
-LSE, Supervised by David Dorn
+University of Zurich, Supervised by David Dorn
 
 *September 2026 - August 2028*
 
@@ -23,9 +23,7 @@ LSE, Supervised by David Dorn
 
 Remote Research Assistant, Led by Professor Zihan Hu
 
-*January 2026 - Present*
-
-- In Progress.
+*January 2026 - September 2026*
 
 **Micro Theory Reading Group**  
 Workshop led by Professor Inácio Bó, University of Macau  
@@ -52,7 +50,6 @@ Wage Discrimination in the English Premier League, Peking University Summer Scho
 
 - **Programming:** Python, Stata
 - **Tools:** LaTeX, Markdown, Typst
-- **Data Analysis:** Econometric modeling, data visualization, web scraping
 - **Languages:** Chinese (Native), English (Fluent, IELTS 7.0)
 - **Standardized Tests:** GRE Verbal 155, Quantitative 170
 
@@ -61,8 +58,3 @@ Wage Discrimination in the English Premier League, Peking University Summer Scho
 - **Dean's Honor List** - University of Macau (*2021-2024*)
 - **UMDF Scholarship Award** - University of Macau (*5000 MOP*)
 - **AAAUM Scholarship** - University of Macau (*5000 MOP*)
-
-## Other Activities
-
-- **President**, University Football Association, University of Macau
-- **Qualified Football Referee**, The FA (England) - Actively officiating matches in South London leagues
