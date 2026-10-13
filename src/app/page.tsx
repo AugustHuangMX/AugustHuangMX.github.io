@@ -1,9 +1,10 @@
 import { getConfig } from '@/lib/config';
 import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } from '@/lib/content';
 import { parseBibTeX } from '@/lib/bibtexParser';
+import { getBlogPosts, toBlogPostMeta } from '@/lib/blog';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, BlogPageConfig, BlogPostMeta } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 
 interface SectionConfig {
@@ -27,7 +28,8 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'blog'; id: string; config: BlogPageConfig; posts: BlogPostMeta[] };
 
 function processSections(sections: SectionConfig[], locale?: string): SectionConfig[] {
   return sections.map((section: SectionConfig) => {
@@ -113,6 +115,16 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
             type: 'card',
             id: item.target,
             config: pageConfig as CardPageConfig,
+          } as PageData;
+        }
+
+        if (pageConfig.type === 'blog') {
+          const blogConfig = pageConfig as BlogPageConfig;
+          return {
+            type: 'blog',
+            id: item.target,
+            config: blogConfig,
+            posts: getBlogPosts(blogConfig.source, locale).map(toBlogPostMeta),
           } as PageData;
         }
 

@@ -7,9 +7,10 @@ import News, { NewsItem } from '@/components/home/News';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import BlogList from '@/components/blog/BlogList';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardPageConfig, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { BlogPageConfig, BlogPostMeta, CardPageConfig, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
@@ -28,7 +29,8 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'blog'; id: string; config: BlogPageConfig; posts: BlogPostMeta[] };
 
 export interface HomePageLocaleData {
   author: SiteConfig['author'];
@@ -116,6 +118,14 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
               {page.type === 'card' && (
                 <CardPage
                   config={page.config}
+                  embedded={true}
+                />
+              )}
+              {page.type === 'blog' && (
+                <BlogList
+                  slug={page.id}
+                  config={page.config}
+                  posts={page.posts}
                   embedded={true}
                 />
               )}

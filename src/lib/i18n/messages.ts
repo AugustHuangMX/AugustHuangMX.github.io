@@ -42,6 +42,12 @@ export interface LocaleMessages {
     bibtex: string;
     code: string;
   };
+  blog: {
+    noPosts: string;
+    newer: string;
+    older: string;
+    draft: string;
+  };
   footer: {
     lastUpdated: string;
     builtWithPrism: string;
@@ -92,6 +98,12 @@ const en: LocaleMessages = {
     bibtex: 'BibTeX',
     code: 'Code',
   },
+  blog: {
+    noPosts: 'No posts yet.',
+    newer: 'Newer',
+    older: 'Older',
+    draft: 'Draft',
+  },
   footer: {
     lastUpdated: 'Last updated',
     builtWithPrism: 'Built with PRISM',
@@ -141,6 +153,12 @@ const zh: LocaleMessages = {
     abstract: '摘要',
     bibtex: 'BibTeX',
     code: '代码',
+  },
+  blog: {
+    noPosts: '还没有文章。',
+    newer: '较新的文章',
+    older: '较早的文章',
+    draft: '草稿',
   },
   footer: {
     lastUpdated: '最近更新',

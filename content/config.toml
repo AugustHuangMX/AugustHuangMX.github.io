@@ -64,6 +64,12 @@ type = "page"
 target = "publications"
 href = "/publications"
 
+[[navigation]]
+title = "Blog"
+type = "page"
+target = "blog"
+href = "/blog"
+
 #[[navigation]]
 #title = "Teaching"
 #type = "page"

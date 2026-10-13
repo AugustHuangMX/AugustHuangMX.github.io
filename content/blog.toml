@@ -1,0 +1,5 @@
+type = "blog"
+title = "Blog"
+description = "Notes and personal thoughts."
+# Directory under content/ holding the posts (one Markdown file per post)
+source = "blog"

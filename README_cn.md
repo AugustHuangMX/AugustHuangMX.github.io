@@ -98,8 +98,29 @@ PRISM 支持以下几种页面类型：
 *   `text`: 纯文本渲染（Markdown），非常适合用来放 **个人简历 (CV)** 或 **详细介绍 (Bio)**。
 *   `card`: 卡片列表布局，适合展示 **项目 (Projects)** 或 **获奖经历 (Awards)**。卡片条目的 `content` 字段支持 Markdown。
 *   `publication`: 完整的论文列表页，自带搜索和筛选器。
+*   `blog`: 博客，读取一个目录下的 Markdown 文章，生成文章列表和每篇文章的独立页面（见下文）。
 
-### 5. 多语言支持（`content_<locale>/`）
+### 5. 博客（`content/blog/`）
+
+`content/blog.toml` 定义博客页面，其中 `source = "blog"` 指向 `content/blog/` 目录。目录里每个 `.md` 文件就是一篇文章，文件名即网址（`content/blog/my-post.md` → `/blog/my-post`），所以文件名请只用小写字母、数字和连字符。
+
+复制 `content/blog/_template.md` 即可开始写一篇新文章（以 `_` 开头的文件会被忽略）：
+
+```markdown
+---
+title: "文章标题"
+date: 2026-10-13          # 文章按日期从新到旧排列
+description: ""           # 可选；留空时自动取正文第一段
+tags: [随想]              # 可选
+draft: true               # 草稿只在 `npm run dev` 时显示
+---
+
+正文用 Markdown 书写，支持 GitHub 风格的表格、脚注、删除线等。
+```
+
+图片放在 `public/images/blog/` 下，在文中用 `/images/blog/photo.jpg` 引用。
+
+### 6. 多语言支持（`content_<locale>/`）
 
 PRISM 现已支持多语言：
 

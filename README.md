@@ -88,8 +88,28 @@ Supported page types:
 *   `text`: Renders Markdown content (Great for CVs, Bio).
 *   `card`: Renders a list of cards (Great for Projects, Awards). Content of each card item supports Markdown.
 *   `publication`: Renders the full publications list with filters.
+*   `blog`: Renders a list of Markdown posts from a directory, each with its own page (see below).
 
-### 5. I18N Support (`content_<locale>/`)
+### 5. Blog (`content/blog/`)
+`content/blog.toml` defines the blog page, and `source = "blog"` points it at `content/blog/`. Each `.md` file in that directory is one post, and its file name becomes the URL (`content/blog/my-post.md` → `/blog/my-post`), so stick to lowercase letters, digits and hyphens.
+
+Start a post by copying `content/blog/_template.md` (files starting with `_` are ignored):
+
+```markdown
+---
+title: "Post title"
+date: 2026-10-13          # posts are sorted newest first
+description: ""           # optional; defaults to the first paragraph
+tags: [thoughts]          # optional
+draft: true               # drafts only appear in `npm run dev`
+---
+
+Write the post in Markdown. GitHub-flavored Markdown (tables, footnotes, strikethrough) is supported.
+```
+
+Put images in `public/images/blog/` and reference them as `/images/blog/photo.jpg`.
+
+### 6. I18N Support (`content_<locale>/`)
 PRISM now supports i18n, i.e., multi-language.
 
 *   Default language lives in `content/`.

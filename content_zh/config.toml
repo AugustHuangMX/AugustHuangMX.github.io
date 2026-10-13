@@ -63,6 +63,12 @@ type = "page"
 target = "publications"
 href = "/publications"
 
+[[navigation]]
+title = "博客"
+type = "page"
+target = "blog"
+href = "/blog"
+
 #[[navigation]]
 #title = "教学"
 #type = "page"

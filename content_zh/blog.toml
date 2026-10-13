@@ -1,0 +1,5 @@
+type = "blog"
+title = "博客"
+description = "随想与笔记。"
+# 存放文章的目录（content_zh/ 下没有时回退到 content/blog/）
+source = "blog"

@@ -42,6 +42,16 @@ function readFirstAvailableFile(filename: string, locale?: string): string {
   return '';
 }
 
+export function getContentDirectory(dirname: string, locale?: string): string | null {
+  for (const dirPath of getCandidateFilePaths(dirname, locale)) {
+    if (fs.existsSync(dirPath) && fs.statSync(dirPath).isDirectory()) {
+      return dirPath;
+    }
+  }
+
+  return null;
+}
+
 export function getMarkdownContent(filename: string, locale?: string): string {
   return readFirstAvailableFile(filename, locale);
 }
